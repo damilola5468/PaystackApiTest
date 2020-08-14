@@ -91,7 +91,7 @@ public class ApiConnection {
         connection.setDoOutput(true);
 //          System.out.println(connection);
         try (BufferedReader br = new BufferedReader(
-                new InputStreamReader(connection.getInputStream(), "utf-8"))) {
+            new InputStreamReader(connection.getInputStream(), "utf-8"))) {
             StringBuilder response = new StringBuilder();
             String responseLine = null;
             while ((responseLine = br.readLine()) != null) {

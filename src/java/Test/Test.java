@@ -6,7 +6,9 @@
 package Test;
 
 import Core.ApiConnection;
+import PaystackServices.FetchTransaction;
 import PaystackServices.InitializeTransaction;
+import PaystackServices.ListTransactions;
 import PaystackServices.VerifyTransaction;
 import java.io.IOException;
 import java.net.URL;
@@ -21,16 +23,27 @@ public class Test {
     public static void main(String[] args) throws IOException {
 
 //         Initialze Transactions
-//        HashMap queryMap = new HashMap<String, String>();
-//        queryMap.put("email", "lorlahstrings@gmail.com");
-//        queryMap.put("amount", "100000");
-//        InitializeTransaction init = new InitializeTransaction();
-//        init.init(queryMap);
+        
+        HashMap queryMap = new HashMap<String, String>();
+        queryMap.put("email", "lorlahstrings@gmail.com");
+        queryMap.put("amount", "100000");
+        InitializeTransaction init = new InitializeTransaction();
+        init.init(queryMap);
         
         
 //          Verify Transaction
-            VerifyTransaction verify = new VerifyTransaction ();
-            verify.verify("ux3scgacrg");
+        
+//            VerifyTransaction verify = new VerifyTransaction ();
+//            verify.verify("ux3scgacrg");
+ 
+        
+//        List Transactions
+        
+//        ListTransactions  list = new ListTransactions ();
+//        list.ListAll();       
+         
+        
+            
 
 
     }

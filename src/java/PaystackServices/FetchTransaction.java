@@ -20,6 +20,6 @@ public class FetchTransaction {
          URL url = new URL (Constants.UrlConstants.PAYSTACK_TRANSACTIONS_FETCH_TRANSACTION);
           ApiConnection connect = new ApiConnection(url);
           connect.connectAndQueryWithGet(id);
-        
+
     }
 }
