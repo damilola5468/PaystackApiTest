@@ -61,7 +61,7 @@ public class ApiConnection {
             postData.append(('"' + que.getValue().toString() + '"'));
         }
         String result = postData.toString() + "}";
-
+        System.out.println(result);
         try (OutputStream writer = connection.getOutputStream()) {
             byte[] input = result.getBytes("utf-8");
             writer.write(input);
